@@ -1,0 +1,477 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-image: url(../image/wallpaperflare.com_wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(7px);
+    min-height: 100vh;
+    font-family: 'poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+:root {
+    --main-color: #ffffff;
+}
+
+.header {
+    padding: 20px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .container ul {
+    display: flex;
+    gap: 20px;
+}
+
+.header .container ul li {
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--main-color);
+    position: relative;
+}
+
+.header .container ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: var(--main-color);
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.header .container ul li:hover::before {
+    opacity: 1;
+    bottom: 0;
+}
+
+.header .container form {
+    position: relative;
+}
+
+.header .container form input {
+    height: 30px;
+    transition: .5s;
+    cursor: pointer;
+    background-color: transparent;
+    border: solid 1.5px var(--main-color);
+    border-radius: 5px;
+    color: var(--main-color);
+    padding: 10px;
+    max-width: 115px;
+    font-size: 17px;
+}
+
+.header .container form input:focus {
+    outline: none;
+}
+
+.header .container form ion-icon {
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+    transform: translatey(6px);
+    color: var(--main-color);
+}
+
+.pare-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pare-content .container {
+    background-image: url(../image/wallpaperflare.com_wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pare-content .container .left-C {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 70px 0 70px 80px;
+    height: 100%
+}
+
+.pare-content .container .left-C>h2 {
+    color: var(--main-color);
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.pare-content .container .left-C h1,
+.pare-content .container .left-C p {
+    color: var(--main-color);
+    margin: 25px 0;
+}
+
+.pare-content .container .left-C h1 {
+    font-size: 50px;
+    line-height: 1;
+    text-transform: capitalize;
+}
+
+.pare-content .container .left-C p {
+    max-width: 490px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.pare-content .container .left-C .links {
+    display: flex;
+    gap: 20px;
+}
+
+.pare-content .container .left-C .links i {
+    font-size: 20px;
+    color: var(--main-color);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.pare-content .container .left-C .links a:first-child:hover i {
+    color: #1877F2;
+}
+
+.pare-content .container .left-C .links a:nth-child(2):hover i {
+    color: #1D9BF0;
+}
+
+.pare-content .container .left-C .links a:nth-child(3):hover i {
+    color: hsl(348.66, 75.23%, 57.25%);
+}
+
+.pare-content .container .left-C .links a:last-child:hover i {
+    color: #000;
+}
+
+.pare-content .container .right-F {
+    padding: 70px 80px 0 0;
+}
+
+.right-F form {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-F form h1 {
+    color: var(--main-color);
+    text-transform: capitalize;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.inputs div label {
+    position: relative;
+    bottom: calc(17px + 12.5px);
+    transition: .5s;
+    color: #ffffff;
+    font-size: 17.3px;
+}
+
+.inputs div label {
+    position: relative;
+    bottom: calc(17px + 12.5px);
+    transition: .5s;
+    color: #ffffff;
+    font-size: 17.3px;
+    z-index: 0;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inputs div:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.inputs input:focus {
+    outline: none;
+}
+
+.inputs div input {
+    width: 100%;
+    border: none;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+    font-size: 17px;
+    height: 37px;
+    background: transparent;
+    border-bottom: solid 2px #ffffff;
+    caret-color: #ffffff;
+}
+
+.inputs div .md {
+    position: absolute;
+    color: #ffffff;
+    right: 0;
+    BOTTOM: calc(50% + 2px);
+    font-size: 18.5px;
+}
+
+.inputs div:last-child .md {
+    cursor: pointer;
+    z-index: 99;
+}
+
+.inputs div input {
+    width: 100%;
+    border: none;
+    color: #ffffff;
+    font-size: 17px;
+    height: 37px;
+    background: transparent;
+    border-bottom: solid 2px #ffffff;
+    caret-color: #ffffff;
+}
+
+.inputs div {
+    position: relative;
+}
+
+.right-F>.ch {
+    color: var(--main-color);
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.right-F>button {
+    width: 100%;
+    margin: 20px 0 15px;
+    color: var(--main-color);
+    padding: 10px 0;
+    border-radius: 6px;
+    background-color: #FF4578;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.right-F>button:hover {
+    color: #000000;
+}
+
+.right-F>span {
+    color: var(--main-color);
+}
+
+.right-F>span a {
+    color: var(--main-color);
+
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.right-F>span a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    opacity: 0;
+    background: var(--main-color);
+    width: 100%;
+    height: 1.5px;
+    transition: .4s;
+}
+
+.right-F>span a:hover::before {
+    opacity: 1;
+    bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .pare-content {
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: translate(0);
+    }
+
+    .pare-content .container {
+        flex-direction: column;
+        height: 810px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .pare-content .container .left-C {
+        padding: 5px;
+    }
+
+    .pare-content .container .right-F {
+        padding: 5px;
+    }
+
+    .right-F form div input {
+        width: 100%;
+    }
+}
+
+@media (min-width: 560px) {
+    .bars {
+        display: none;
+    }
+}
+
+@media (max-width: 560px) {
+    .bars {
+        cursor: pointer;
+    }
+
+    .nav-bar {
+        position: absolute;
+        backdrop-filter: blur(13px);
+        z-index: 99;
+        width: 100%;
+        left: 0;
+        top: 87px;
+        height: 0;
+        overflow: hidden;
+        transition: .5s;
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+    }
+
+    .nav-bar ul li {
+        text-align: center;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        background-color: #000;
+        width: 35px;
+        margin: 6px 0;
+        height: 5px;
+        transition: .5s;
+    }
+
+    .Show {
+        padding: 25px 20px;
+        height: 335px;
+    }
+
+    .X_effect .bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+    }
+
+    .X_effect .bar2 {
+        opacity: 0;
+    }
+
+    .X_effect .bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+    }
+
+    .X_effect .bar1,
+    .X_effect .bar2,
+    .X_effect .bar3 {
+        background-color: #FF4578;
+    }
+}
+
+@media (max-width: 443px) {
+    .pare-content .container .left-C h1 {
+        font-size: 43px;
+    }
+}
+
+@media (max-width: 390px) {
+    .pare-content .container .left-C h1 {
+        font-size: 37px;
+    }
+}
+
+@media (max-width: 348px) {
+    .pare-content .container .left-C h1 {
+        font-size: 33px;
+    }
+}
+
+@media (max-width: 340px) {
+    .header .container ul {
+        gap: 14px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+    .pare-content .container .left-C h1 {
+        font-size: 43px;
+    }
+}
+
+/* label effe */
+
+.inputs .labelEff {
+    bottom: 60px;
+    font-size: 14.5px;
+}
